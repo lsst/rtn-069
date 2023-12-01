@@ -27,7 +27,7 @@ William O'Mullane
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-There are several pieces of software running on the summit which have may have no custodian identified in ops. We identify some of these here and suggest a team to look after them. 
+There are several pieces of software running on the summit which have may have no custodian identified in ops. We identify some of these here and suggest a team to look after them.
 }
 
 % Change history defined here.
@@ -42,13 +42,13 @@ There are several pieces of software running on the summit which have may have n
 \begin{document}
 
 % Create the title page.
-\maketitle
+%\maketitle
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
-% use \mkshorttitle to remove the extra pages
+\mkshorttitle
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
-
+\input{intro}
+\input{items}
+\input{team}
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
