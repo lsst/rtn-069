@@ -2,23 +2,37 @@
 
 In the November 2023 DMvF2F several items were identified as not falling in \gls{DM} scope.
 There are other items which have appeared on the summit, are useful, but have unclear owners in operations.
-SITCOM is also building more functionality with no clear owner/maintainer in operations.
+\gls{SITCOM} is also building more functionality with no clear owner/maintainer in operations.
 
 This is a list of some of these items which a summit \gls{software} team might improve and maintain:
 
 \subsection{ RubinTV }
- this has been developed in \gls{SITCOM}, there have been no reviews and there is a sole maintainer
+ RubinTV  has been developed in \gls{SITCOM}, there have been no reviews and there is a sole maintainer.
+This will certainly exist through operations and should be owned , reviewed and maintained y more than one person.
+This is somewhat being looked at by FIG \citeds{SITCOMTN-059}.
 
 \subsection{ Summit \gls{QA} tools}
- - as they build up who maintains them
+\jire{SITCOM-700} is a missing functionality ticket in this area.
+
+In DM a \gls{QA} working group was setup in 2018 \citedsp{LDM-622} which reported in 2019 \citeds{DMTN-085}.
+DM dealt mainly with tooling and considered pipelines - some of that tooling may end up on the summit especially derivatives of the metrics framework \citeds{DMTN-098}.
+
+In any case there will be pipeline code running on the summit producing QA outputs which a summit team should be able to configure/update/maintain.
+
+
 
 \subsection{ Reporting }
 
+There are several types of reporting from operator logs to end of night reports.
+A technote from Frossie is due on this.
+
 \subsection{ \gls{Camera} Visualization}
- - Tony built a tool for previewing camera images - is this going to be on the summit ? Who maintains it ? \gls{Camera} ?
+Tony built a tool for previewing camera images - we believe is this going to be on the summit ?
+There are camera diagnostic machines available to run it and other camera specific diagnostics.
+There are Camera developers (or one at least) to be added to the Observatory team in operations to support this.
 
 \subsection{ \gls{OCPS} }
-- written by \gls{DM} but not obviously a \gls{DM} maintenance job
+\gls{OCPS} was  written by \gls{DM} but is  not obviously a \gls{DM} maintenance job.
 
 \subsection{ Header Service }
 - again \gls{DM} put this in place as it was  needed but it was not really \gls{DM} functionality
@@ -30,5 +44,5 @@ This is a list of some of these items which a summit \gls{software} team might i
  - this probably  should be \gls{USDF}
 
 \subsection{ \gls{EFD}}
- - this is the biggest item provided by \gls{DM} - it should probably stay with SQuaRE but \gls{DM} was never sized for 24/7 support.
+ EFD this is the biggest item provided by \gls{DM} - it should probably stay with SQuaRE but \gls{DM} was never sized for 24/7 support.
 
