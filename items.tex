@@ -31,6 +31,11 @@ This is possible something best maintained by DM but deployed by the summit team
 \gls{OCPS} \citedsp{DMTN-133}  was  written by \gls{DM} but is  not obviously a \gls{DM} maintenance job.
 DM would like to merge this with Rapid Analysis and drop OCPS entirely.
 
+\subsection{ OODS and s3daemon }
+The s3daemon code \url{https://github.com/lsst-dm/s3daemon} amd OODS \url{https://github.com/lsst-dm/ctrl_oods}
+transfer files from the summit.
+Maintaining this code  falls in DM but iinstallation ans keeping it runnign on the summit belongs with the summit team.
+
 \subsection{ Reporting }
 
 There are several types of reporting from operator logs to end of night reports.
@@ -50,9 +55,17 @@ There was discussion of camera providing this but camera now use this service to
 This has been ill defined and worked on by many.
 It is currently tied up in the Consolidated Database \citedsp{DMTN-258}
 
+\subsection{ LiveObsCore}
+LiveObsCore \citeds{DMTN-236} which exposes some of the butler DB to TAP is another publishing of summit informaiton which may be needed at the summit.
+The software would be DM midleware but keeping it running on summit and installing could be Summit Team.
+
 \subsection{ Exposure Log  insertion at \gls{USDF}}
   This probably  should be \gls{USDF}
 
 \subsection{ \gls{EFD}}
  EFD this is the biggest item provided by \gls{DM} - it should probably stay with SQuaRE but \gls{DM} was never sized for 24/7 support.
 
+\subseciton{ Data Wrangling }
+Calibrations, and butler databases, schema migtraitons, keeping sites/test stands in synch are all
+part of "data wrangling".
+Though not part of this team this function must interact with the team.
