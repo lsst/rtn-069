@@ -11,6 +11,7 @@
 \newglossaryentry{Center} {name={Center}, description={An entity managed by AURA that is responsible for execution of a federally funded project}}
 \newglossaryentry{Commissioning} {name={Commissioning}, description={A two-year phase at the end of the Construction project during which a technical team a) integrates the various technical components of the three subsystems; b) shows their compliance with ICDs and system-level requirements as detailed in the LSST Observatory System Specifications document (OSS, LSE-30); and c) performs science verification to show compliance with the survey performance specifications as detailed in the LSST Science Requirements Document (SRD, LPM-17)}}
 \newglossaryentry{Construction} {name={Construction}, description={The period during which LSST observatory facilities, components, hardware, and software are built, tested, integrated, and commissioned. Construction follows design and development and precedes operations. The LSST construction phase is funded through the NSF MREFC account}}
+\newacronym{DB} {DB} {DataBase}
 \newacronym{DCR} {DCR} {\gls{Differential Chromatic Refraction}}
 \newacronym{DIA} {DIA} {\gls{Difference Image Analysis}}
 \newglossaryentry{DIAObject} {name={DIAObject}, description={A DIAObject is the association of DIASources, by coordinate, that have been detected with signal-to-noise ratio greater than 5 in at least one difference image. It is distinguished from a regular Object in that its brightness varies in time, and from a SSObject in that it is stationary (non-moving)}}
@@ -41,6 +42,7 @@
 \newglossaryentry{Handle} {name={Handle}, description={The unique identifier assigned to a document uploaded to DocuShare}}
 \newacronym{IAU} {IAU} {International Astronomical Union}
 \newacronym{IT} {IT} {Information Technology}
+\newacronym{IVOA} {IVOA} {International Virtual-Observatory Alliance}
 \newacronym{LDM} {LDM} {LSST Data Management (Document \gls{Handle})}
 \newacronym{LPM} {LPM} {LSST Project Management (Document \gls{Handle})}
 \newacronym{LSE} {LSE} {LSST \gls{Systems Engineering} (Document Handle)}
@@ -56,9 +58,11 @@
 \newglossaryentry{National Science Foundation} {name={National Science Foundation}, description={primary federal agency supporting research in all fields of fundamental science and engineering; NSF selects and funds projects through competitive, merit-based review}}
 \newacronym{OCPS} {OCPS} {OCS Controlled Pipeline System}
 \newacronym{OCS} {OCS} {Observatory Control System}
+\newacronym{OODS} {OODS} {Observatory \gls{Operations} Data Service}
 \newacronym{OPS} {OPS} {\gls{Operations}}
 \newacronym{OSS} {OSS} {Observatory System Specifications; \gls{LSE}-30}
 \newglossaryentry{Object} {name={Object}, description={In LSST nomenclature this refers to an astronomical object, such as a star, galaxy, or other physical entity. E.g., comets, asteroids are also Objects but typically called a Moving Object or a Solar System Object (SSObject). One of the DRP data products is a table of Objects detected by LSST which can be static, or change brightness or position with time}}
+\newacronym{ObsCore} {ObsCore} {Observation Data Model Core Components (\gls{IVOA} standard)}
 \newglossaryentry{Operations} {name={Operations}, description={The 10-year period following construction and commissioning during which the LSST Observatory conducts its survey}}
 \newacronym{PM} {PM} {\gls{Project Manager}}
 \newacronym{PSF} {PSF} {Point Spread Function}
@@ -68,6 +72,8 @@
 \newacronym{QC} {QC} {\gls{Quality Control}}
 \newglossaryentry{Quality Assurance} {name={Quality Assurance}, description={All activities, deliverables, services, documents, procedures or artifacts which are designed to ensure the quality of DM deliverables. This may include QC systems, in so far as they are covered in the charge described in LDM-622. Note that contrasts with the LDM-522 definition of “QA” as “Quality Analysis”, a manual process which occurs only during commissioning and operations. See also: Quality Control}}
 \newglossaryentry{Quality Control} {name={Quality Control}, description={Services and processes which are aimed at measuring and monitoring a system to verify and characterize its performance (as in LDM-522). Quality Control systems run autonomously, only notifying people when an anomaly has been detected. See also Quality Assurance}}
+\newacronym{ROO} {ROO} {Rubin Observatory \gls{Operations}}
+\newacronym{RPF} {RPF} {Rubin system PerFormance}
 \newacronym{RTN} {RTN} {Rubin Technical Note}
 \newglossaryentry{Review} {name={Review}, description={Programmatic and/or technical audits of a given component of the project, where a preferably independent committee advises further project decisions, based on the current status and their evaluation of it. The reviews assess technical performance and maturity, as well as the compliance of the design and end product with the stated requirements and interfaces}}
 \newglossaryentry{Rubin Operations} {name={Rubin Operations}, description={operations phase of Vera C. Rubin Observatory}}
@@ -85,6 +91,7 @@
 \newglossaryentry{Summit} {name={Summit}, description={The site on the Cerro Pach\'{o}n, Chile mountaintop where the LSST observatory, support facilities, and infrastructure will be built}}
 \newglossaryentry{Systems Engineering} {name={Systems Engineering}, description={an interdisciplinary field of engineering that focuses on how to design and manage complex engineering systems over their life cycles. Issues such as requirements engineering, reliability, logistics, coordination of different teams, testing and evaluation, maintainability and many other disciplines necessary for successful system development, design, implementation, and ultimate decommission become more difficult when dealing with large or complex projects. Systems engineering deals with work-processes, optimization methods, and risk management tools in such projects. It overlaps technical and human-centered disciplines such as industrial engineering, control engineering, software engineering, organizational studies, and project management. Systems engineering ensures that all likely aspects of a project or system are considered, and integrated into a whole}}
 \newacronym{T&S} {T\&S} {\gls{Telescope and Site}}
+\newacronym{TAP} {TAP} {Table Access Protocol (\gls{IVOA} standard)}
 \newglossaryentry{Telescope and Site} {name={Telescope and Site}, description={The LSST subsystem responsible for design and construction of the telescope structure, telescope mirrors, optical wavefront measurement and control system, telescope and observatory control systems software, and the summit and base facilities.}}
 \newacronym{US} {US} {United States}
 \newacronym{USDF} {USDF} {United States Data Facility}
@@ -98,6 +105,7 @@
 \newglossaryentry{middleware} {name={middleware}, description={Software that acts as a bridge between other systems or software usually a database or network. Specifically in the Data Management System this refers to Butler for data access and Workflow management for distributed processing.}}
 \newglossaryentry{monitoring} {name={monitoring}, description={In DM QA, this refers to the process of collecting, storing, aggregating and visualizing metrics}}
 \newglossaryentry{pipeline} {name={pipeline}, description={A configured sequence of software tasks (Stages) to process data and generate data products. Example: Association Pipeline}}
+\newglossaryentry{schema} {name={schema}, description={The definition of the metadata and linkages between datasets and metadata entities in a collection of data or archive.}}
 \newglossaryentry{shape} {name={shape}, description={In reference to a Source or Object, the shape is a functional characterization of its spatial intensity distribution, and the integral of the shape is the flux. Shape characterizations are a data product in the DIASource, DIAObject, Source, and Object catalogs}}
 \newglossaryentry{software} {name={software}, description={The programs and other operating information used by a computer.}}
 \newglossaryentry{stack} {name={stack}, description={a grouping, usually in layers (hence stack), of software packages and services to achieve a common goal. Often providing a higher level set of end user oriented services and tools}}
